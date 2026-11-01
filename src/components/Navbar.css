@@ -1,0 +1,30 @@
+.navbar {
+  min-height: 82px; display: flex; align-items: center; justify-content: space-between;
+  gap: 28px; padding: 0 6%; background: #fff; border-bottom: 1px solid #edf0f5;
+}
+.brand { color: #101828; font-size: 27px; font-weight: 850; letter-spacing: -1.4px; text-decoration: none; white-space: nowrap; }
+.brand span { color: #2563eb; }
+.brand i { color: #f59e0b; font-style: normal; }
+.search-box { display: flex; align-items: center; gap: 10px; width: min(480px, 42vw); height: 46px; padding: 0 14px; background: #f7f8fc; border: 1px solid #e7eaf1; border-radius: 12px; }
+.search-icon { color: #64748b; font-size: 25px; line-height: 1; }
+.search-box input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: #172033; font: inherit; font-size: 14px; }
+.search-box kbd { color: #98a2b3; font-size: 11px; border: 1px solid #e0e4ec; border-radius: 5px; padding: 3px 5px; }
+.nav-actions { display: flex; align-items: center; gap: 25px; }
+.nav-small, .cart-nav { display: flex; align-items: center; gap: 8px; color: #344054; font-size: 13px; font-weight: 650; white-space: nowrap; }
+.nav-small { padding: 8px 0; }
+.nav-small b { color: #2563eb; }
+.nav-symbol { font-size: 20px; }
+.cart-nav { position: relative; border: 0; background: transparent; cursor: pointer; }
+.cart-badge { display: grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px; color: white; background: #2563eb; border-radius: 99px; font-size: 11px; }
+.category-nav { display: flex; align-items: center; gap: 30px; min-height: 48px; padding: 0 6%; background: #fff; border-bottom: 1px solid #edf0f5; }
+.category-nav a, .category-highlight { color: #596579; text-decoration: none; font-size: 13px; font-weight: 600; }
+.category-nav a:hover, .category-highlight { color: #2563eb; }
+.delivery-note { margin-left: auto; color: #667085; font-size: 12px; }
+@media (max-width: 760px) {
+  .navbar { flex-wrap: wrap; gap: 14px; padding: 16px 5%; }
+  .search-box { order: 3; width: 100%; }
+  .nav-actions { gap: 14px; }
+  .nav-label { display: none; }
+  .category-nav { gap: 18px; overflow-x: auto; white-space: nowrap; padding: 14px 5%; }
+  .delivery-note { display: none; }
+}

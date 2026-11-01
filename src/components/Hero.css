@@ -1,0 +1,20 @@
+.hero { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 42px; width: 90%; max-width: 1320px; min-height: 430px; margin: 34px auto 62px; padding: 42px 5%; overflow: hidden; border-radius: 24px; background: linear-gradient(115deg, #eaf1ff 0%, #f1f4ff 52%, #dce8ff 100%); }
+.hero-copy { position: relative; z-index: 2; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 9px; color: #315fc4; font-size: 10px; font-weight: 800; letter-spacing: 1.7px; }
+.hero-eyebrow span { width: 7px; height: 7px; background: #f59e0b; border-radius: 50%; }
+.hero h1 { margin: 22px 0 16px; color: #14213d; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.04; letter-spacing: -2.8px; }
+.hero h1 em { color: #2860d7; font-style: normal; }
+.hero-copy p { max-width: 420px; color: #64748b; font-size: 15px; line-height: 1.8; }
+.hero-button { display: inline-flex; align-items: center; gap: 28px; margin-top: 25px; padding: 14px 19px; color: white; background: #2563eb; border-radius: 9px; text-decoration: none; font-size: 13px; font-weight: 700; box-shadow: 0 8px 18px #2563eb30; transition: .2s; }
+.hero-button:hover { transform: translateY(-3px); background: #174fc9; }
+.hero-proof { display: flex; align-items: center; gap: 10px; margin-top: 34px; color: #697790; font-size: 11px; }
+.hero-proof b { color: #e49a14; }.hero-proof i { width: 3px; height: 3px; background: #aab4c5; border-radius: 50%; }
+.hero-visual { position: relative; min-height: 330px; }
+.hero-visual img { position: absolute; inset: 12px 0 12px 10px; width: calc(100% - 10px); height: calc(100% - 24px); object-fit: cover; border-radius: 18px; box-shadow: 0 22px 45px #1d37652b; }
+.hero-orbit { position: absolute; border: 1px solid #fff9; border-radius: 50%; z-index: 1; pointer-events: none; }
+.orbit-one { width: 360px; height: 360px; top: -30px; right: -55px; }
+.orbit-two { width: 280px; height: 280px; top: 10px; right: -15px; }
+.hero-sticker { position: absolute; z-index: 2; top: -4px; right: -18px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 88px; height: 88px; color: #fff; background: #f59e0b; border: 5px solid #fff; border-radius: 50%; transform: rotate(10deg); box-shadow: 0 8px 20px #9a650d30; }
+.hero-sticker strong { font-size: 9px; letter-spacing: 1px; }.hero-sticker b { font-size: 25px; line-height: 1.1; }
+.hero-caption { position: absolute; z-index: 2; left: -12px; bottom: 2px; padding: 12px 17px; color: #1d355c; background: #fff; border-radius: 9px; font-size: 12px; font-weight: 750; line-height: 1.5; box-shadow: 0 8px 20px #1d376522; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding: 34px 7%; margin-top: 20px; }.hero-visual { min-height: 230px; }.hero h1 { font-size: 43px; }.hero-proof { flex-wrap: wrap; } }
