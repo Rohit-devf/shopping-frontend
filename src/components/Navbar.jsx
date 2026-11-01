@@ -10,12 +10,12 @@ function Navbar({ search, setSearch, cartCount, onCartClick, wishlistCount }) {
         </a>
 
         <label className="search-box">
-          <span className="search-icon">🔍</span>
+        
           <input
             type="search"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder="Search products..."
+            placeholder=" 🔍Search products..."
             aria-label="Search products"
           />
          
