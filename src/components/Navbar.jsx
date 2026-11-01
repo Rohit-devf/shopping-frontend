@@ -15,8 +15,8 @@ function Navbar({ search, setSearch, cartCount, onCartClick, wishlistCount }) {
             type="search"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder=" 🔍Search products..."
-            aria-label="Search products"
+            placeholder=" **🔍** Search products..."
+            aria-label="Search roducts"
           />
          
         </label>
