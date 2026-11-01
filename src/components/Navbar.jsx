@@ -10,7 +10,7 @@ function Navbar({ search, setSearch, cartCount, onCartClick, wishlistCount }) {
         </a>
 
         <label className="search-box">
-          <span className="search-icon">⌕</span>
+          <span className="search-icon">🔍</span>
           <input
             type="search"
             value={search}
@@ -18,7 +18,7 @@ function Navbar({ search, setSearch, cartCount, onCartClick, wishlistCount }) {
             placeholder="Search products..."
             aria-label="Search products"
           />
-          <kbd>⌘ K</kbd>
+         
         </label>
 
         <div className="nav-actions">
